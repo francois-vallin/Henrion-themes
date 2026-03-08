@@ -1,0 +1,11 @@
+{
+  "name": "henrion-theme-classic",
+  "title": "Henrion Classic",
+  "version": "0.3.0",
+  "author": "Henrion",
+  "type": "theme",
+  "henrion": {
+    "min": "0.3.0",
+    "max": "0.3.x"
+  }
+}

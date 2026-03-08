@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title|default('Henrion') }}</title>
+  <link rel="stylesheet" href="{{ asset_base|default('assets') }}/theme.css">
+</head>
+<body class="henrion-classic">
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
