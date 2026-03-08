@@ -1,0 +1,28 @@
+{
+  "name": "henrion-themes",
+  "type": "marketplace",
+  "version": "0.3.0",
+  "repository": "Henrion-themes",
+  "packages": [
+    {
+      "name": "henrion-theme-classic",
+      "type": "theme",
+      "version": "0.3.0",
+      "henrion": {
+        "min": "0.3.0",
+        "max": "0.3.x"
+      },
+      "path": "packages/henrion-theme-classic"
+    },
+    {
+      "name": "henrion-theme-dashboard",
+      "type": "theme",
+      "version": "0.3.0",
+      "henrion": {
+        "min": "0.3.0",
+        "max": "0.3.x"
+      },
+      "path": "packages/henrion-theme-dashboard"
+    }
+  ]
+}

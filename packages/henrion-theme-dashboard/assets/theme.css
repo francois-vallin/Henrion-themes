@@ -1,0 +1,18 @@
+body.henrion-dashboard {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+body.henrion-dashboard aside {
+  padding: 1rem;
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.henrion-dashboard main {
+  padding: 1.5rem;
+  background: #f3f4f6;
+}
