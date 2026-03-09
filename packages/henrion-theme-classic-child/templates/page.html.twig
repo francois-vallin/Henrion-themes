@@ -1,0 +1,11 @@
+{# Créé le: 2026-03-09T01:36 | Dernière modification: 2026-03-09T01:36 #}
+{% extends 'base.html.twig' %}
+
+{% block content %}
+  <article class="page-content child-highlight">
+    {% if title is hero_title %}
+      <h2>{{ title }}</h2>
+    {% endif %}
+    {{ content|raw }}
+  </article>
+{% endblock %}

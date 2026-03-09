@@ -1,0 +1,16 @@
+{# Créé le: 2026-03-09T01:36 | Dernière modification: 2026-03-09T01:36 #}
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Henrion Dashboard{% endblock %}</title>
+  <link rel="stylesheet" href="{{ asset_base }}/css/theme.css">
+</head>
+<body class="henrion-dashboard">
+  <aside>{% block sidebar %}{{ 'dashboard'|dashboard_badge }}{% endblock %}</aside>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

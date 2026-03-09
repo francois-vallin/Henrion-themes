@@ -1,0 +1,14 @@
+{# Créé le: 2026-03-09T03:03 | Dernière modification: 2026-03-09T03:03 #}
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Henrion Admin Ops{% endblock %}</title>
+  <link rel="stylesheet" href="{{ asset_base }}/css/theme.css">
+</head>
+<body class="henrion-admin-ops">
+  <aside>{{ 12|ops_counter }}</aside>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>

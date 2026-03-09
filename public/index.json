@@ -5,28 +5,64 @@
   "repository": "Henrion-themes",
   "packages": [
     {
+      "name": "henrion-theme-admin-ops",
+      "type": "theme",
+      "version": "0.4.0",
+      "checksum": "sha256:c3703ea97c0d689e36e6942d6b76d1998f38f93d1d18d25188f4c1e7445adb85",
+      "size": 2104,
+      "henrion": {
+        "min": "0.3.5.1",
+        "max": "0.4.*"
+      },
+      "path": "packages/henrion-theme-admin-ops"
+    },
+    {
       "name": "henrion-theme-classic",
       "type": "theme",
       "version": "0.4.0",
-      "checksum": "sha256:7b2220fbd3a10b12067b709081108c10711c7a8f6810cba203a1d574462b8002",
-      "size": 791,
+      "checksum": "sha256:4550ebee3ef38fb98869eaa20cc1876b551e3ceedbfc8da15a1ff3abe94b9a5f",
+      "size": 2954,
       "henrion": {
-        "min": "0.3.3",
+        "min": "0.3.5.1",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-classic"
     },
     {
+      "name": "henrion-theme-classic-child",
+      "type": "theme",
+      "version": "0.4.0",
+      "checksum": "sha256:f96bbfc366bef7628f542757a5ccef9085c1491e1d53121103901fbf7eea3e25",
+      "size": 2411,
+      "henrion": {
+        "min": "0.3.5.1",
+        "max": "0.4.*"
+      },
+      "path": "packages/henrion-theme-classic-child"
+    },
+    {
       "name": "henrion-theme-dashboard",
       "type": "theme",
       "version": "0.4.0",
-      "checksum": "sha256:a1c54b1f4310492be47e84e8a86c289df0e42ee54f44bcb01482f261ec4c35b5",
-      "size": 948,
+      "checksum": "sha256:463a48fcf0f89bc4243e83ccba750240d468772b5c20bf31860082ce317d311b",
+      "size": 2605,
       "henrion": {
-        "min": "0.3.3",
+        "min": "0.3.5.1",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-dashboard"
+    },
+    {
+      "name": "henrion-theme-public-aurora",
+      "type": "theme",
+      "version": "0.4.0",
+      "checksum": "sha256:bbcb3e6448ebceddb9cd7515100b6558cc20da42a8967995f97e25efdb0d5187",
+      "size": 2140,
+      "henrion": {
+        "min": "0.3.5.1",
+        "max": "0.4.*"
+      },
+      "path": "packages/henrion-theme-public-aurora"
     }
   ]
 }

@@ -1,3 +1,4 @@
+/* Créé le: 2026-03-09T01:36 | Dernière modification: 2026-03-09T01:36 */
 :root {
   --classic-bg: #f8f9fb;
   --classic-text: #1f2937;
@@ -8,4 +9,8 @@ body.henrion-classic {
   font-family: Arial, sans-serif;
   background: var(--classic-bg);
   color: var(--classic-text);
+}
+
+.layout-content {
+  padding: 1.5rem;
 }

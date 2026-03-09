@@ -1,13 +1,13 @@
 {
   "created_at": "2026-03-09T01:36",
   "updated_at": "2026-03-09T03:03",
-  "name": "henrion-theme-classic",
-  "title": "Henrion Classic",
-  "description": "Thème classique Henrion.",
+  "name": "henrion-theme-classic-child",
+  "title": "Henrion Classic Child",
+  "description": "Thème enfant de démonstration basé sur Henrion Classic.",
   "version": "0.4.0",
   "author": "Henrion",
   "type": "theme",
-  "parent": null,
+  "parent": "henrion-theme-classic",
   "regions": [
     "header",
     "content",
@@ -15,7 +15,7 @@
     "footer"
   ],
   "twig": {
-    "extension": "src/Twig/ClassicThemeExtension.php"
+    "extension": "src/Twig/ClassicChildThemeExtension.php"
   },
   "henrion": {
     "min": "0.3.5.1",
