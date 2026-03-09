@@ -20,10 +20,10 @@
       "name": "henrion-theme-classic",
       "type": "theme",
       "version": "0.4.0",
-      "checksum": "sha256:4550ebee3ef38fb98869eaa20cc1876b551e3ceedbfc8da15a1ff3abe94b9a5f",
-      "size": 2954,
+      "checksum": "sha256:2e18f5b68bcff80c065dce17056cd0d2e27db5614ff4b1ff9be1e7642051e1f6",
+      "size": 3116,
       "henrion": {
-        "min": "0.3.5.1",
+        "min": "0.3.5.2",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-classic"
@@ -44,25 +44,25 @@
       "name": "henrion-theme-dashboard",
       "type": "theme",
       "version": "0.4.0",
-      "checksum": "sha256:463a48fcf0f89bc4243e83ccba750240d468772b5c20bf31860082ce317d311b",
-      "size": 2605,
+      "checksum": "sha256:1f588b77ea17a0131e87e18296767d7ec21fbb6e4ce865fb3de94468511681ca",
+      "size": 2770,
       "henrion": {
-        "min": "0.3.5.1",
+        "min": "0.3.5.2",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-dashboard"
     },
     {
-      "name": "henrion-theme-public-aurora",
+      "name": "henrion-theme-classic-child",
       "type": "theme",
       "version": "0.4.0",
-      "checksum": "sha256:bbcb3e6448ebceddb9cd7515100b6558cc20da42a8967995f97e25efdb0d5187",
-      "size": 2140,
+      "checksum": "sha256:ad1005a198af6d9d9edca7f3ee1fe1c8a36c912d84c1c090e9e5ba7fe198f1a5",
+      "size": 2579,
       "henrion": {
-        "min": "0.3.5.1",
+        "min": "0.3.5.2",
         "max": "0.4.*"
       },
-      "path": "packages/henrion-theme-public-aurora"
+      "path": "packages/henrion-theme-classic-child"
     }
   ]
 }
