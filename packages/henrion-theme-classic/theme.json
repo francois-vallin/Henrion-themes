@@ -18,7 +18,11 @@
     "extension": "src/Twig/ClassicThemeExtension.php"
   },
   "henrion": {
-    "min": "0.3.5.1",
+    "min": "0.3.5.2",
     "max": "0.4.*"
-  }
+  },
+  "roles": [
+    "public"
+  ],
+  "requires": []
 }
