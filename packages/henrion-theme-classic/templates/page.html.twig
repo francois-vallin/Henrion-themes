@@ -1,0 +1,10 @@
+{# Créé le: 2026-03-09T01:36 | Dernière modification: 2026-03-09T01:36 #}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title|default(classic_branding()) }}{% endblock %}
+
+{% block content %}
+  <section class="page-content">
+    {{ content|raw }}
+  </section>
+{% endblock %}
