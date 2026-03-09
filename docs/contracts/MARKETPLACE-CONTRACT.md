@@ -1,37 +1,30 @@
 # MARKETPLACE-CONTRACT
 
 ## Portée
-Contrat de publication/consommation du catalogue marketplace de ce dépôt de thèmes (logique v0.4).
+Contrat officiel du catalogue marketplace publié par le dépôt `Henrion-themes`.
 
 ## Structure du catalogue
-Le catalogue est un JSON exposé via `public/index.json` avec la structure suivante :
+Le catalogue est exposé via `public/index.json`.
 
+Champs racine :
 - `name` (string)
-- `type` (`marketplace`)
+- `type` (valeur stricte `marketplace`)
 - `version` (semver)
 - `repository` (string)
 - `packages` (array)
 
-## Entrées `packages`
-Chaque entrée de `packages` doit représenter un package de thème et inclure :
-
+## Structure d'une entrée `packages`
+Champs requis :
 - `name` (string)
-- `type` (doit valoir `theme`)
+- `type` (valeur stricte `theme`)
 - `version` (semver)
-- `checksum` (string)
-- `size` (integer, en octets)
+- `checksum` (`sha256:<64_hex>`)
+- `size` (integer, octets)
 - `henrion.min` (string)
 - `henrion.max` (string)
+- `path` (chemin relatif à la racine HTTP du catalogue)
 
-Au moins un champ d'accès au package est obligatoire :
-- `path` (chemin local/référentiel), ou
-- `download` (URL de téléchargement)
-
-## Compatibilité Henrion
-- Compatibilité minimale attendue : `henrion.min = 0.3.3`.
-- Pour les packages publiés dans ce dépôt v0.4, la borne haute cible est `henrion.max = 0.4.*`.
-
-## Règles spécifiques à ce dépôt
-- Ce catalogue est dédié aux thèmes (`type = theme`).
-- Aucune donnée de preview/screenshot n'est publiée à ce stade.
-- Le dépôt décrit des packages de thèmes et leur contrat marketplace, sans imposer de dépendance à une technologie de rendu spécifique.
+## Règles
+- Le catalogue décrit uniquement des **packages**.
+- Le runtime ne doit pas dépendre du catalogue pour exécuter un thème.
+- La source de vérité runtime reste le `theme.json` local de chaque thème installé.
