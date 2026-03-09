@@ -1,26 +1,30 @@
 {
   "name": "henrion-themes",
   "type": "marketplace",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": "Henrion-themes",
   "packages": [
     {
       "name": "henrion-theme-classic",
       "type": "theme",
-      "version": "0.3.0",
+      "version": "0.4.0",
+      "checksum": "sha256:7b2220fbd3a10b12067b709081108c10711c7a8f6810cba203a1d574462b8002",
+      "size": 791,
       "henrion": {
-        "min": "0.3.0",
-        "max": "0.3.x"
+        "min": "0.3.3",
+        "max": "0.4.*"
       },
       "path": "packages/henrion-theme-classic"
     },
     {
       "name": "henrion-theme-dashboard",
       "type": "theme",
-      "version": "0.3.0",
+      "version": "0.4.0",
+      "checksum": "sha256:a1c54b1f4310492be47e84e8a86c289df0e42ee54f44bcb01482f261ec4c35b5",
+      "size": 948,
       "henrion": {
-        "min": "0.3.0",
-        "max": "0.3.x"
+        "min": "0.3.3",
+        "max": "0.4.*"
       },
       "path": "packages/henrion-theme-dashboard"
     }

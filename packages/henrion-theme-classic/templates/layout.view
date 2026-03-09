@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title|default('Henrion') }}</title>
-  <link rel="stylesheet" href="{{ asset_base|default('assets') }}/theme.css">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="{{asset_base}}/theme.css">
 </head>
 <body class="henrion-classic">
   <main>
-    {% block content %}{% endblock %}
+    {{content}}
   </main>
 </body>
 </html>

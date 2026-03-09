@@ -1,11 +1,13 @@
 {
   "name": "henrion-theme-dashboard",
   "title": "Henrion Dashboard",
-  "version": "0.3.0",
+  "description": "Thème orienté tableau de bord avec navigation latérale.",
+  "version": "0.4.0",
   "author": "Henrion",
   "type": "theme",
+  "extends": null,
   "henrion": {
-    "min": "0.3.0",
-    "max": "0.3.x"
+    "min": "0.3.3",
+    "max": "0.4.*"
   }
 }
