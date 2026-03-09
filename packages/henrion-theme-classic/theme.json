@@ -1,11 +1,13 @@
 {
   "name": "henrion-theme-classic",
   "title": "Henrion Classic",
-  "version": "0.3.0",
+  "description": "Thème classique sobre pour les interfaces Henrion.",
+  "version": "0.4.0",
   "author": "Henrion",
   "type": "theme",
+  "extends": null,
   "henrion": {
-    "min": "0.3.0",
-    "max": "0.3.x"
+    "min": "0.3.3",
+    "max": "0.4.*"
   }
 }

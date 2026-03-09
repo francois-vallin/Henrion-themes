@@ -1,29 +1,24 @@
 # AI-CONVENTIONS
 
 ## Conventions générales
-- Langage principal : PHP 8+ avec `declare(strict_types=1);`.
-- Nommage des classes : `PascalCase`.
-- Nommage des services et variables : `camelCase`.
-- Nommage des plugins/thèmes : `kebab-case`.
-
-## Conventions plugins
-- Un plugin est contenu dans `plugins/<plugin-name>/`.
-- Fichiers d'entrée standard : `plugin.json`, `<plugin-name>.php`, `routes.php`, `menu.php`.
-- Le bootstrap plugin renvoie idéalement un callable.
-- Les routes sont un tableau de triplets `[METHOD, PATH, HANDLER]`.
+- Nommage des thèmes : `kebab-case`.
+- Manifestes et catalogues : JSON valide, lisible, indenté à 2 espaces.
+- Versions : SemVer (`MAJOR.MINOR.PATCH`).
 
 ## Conventions thèmes
-- Un thème est contenu dans `themes/<theme-name>/`.
+- Un thème est contenu dans `packages/<theme-name>/`.
 - Fichier manifeste : `theme.json`.
 - Templates dans `templates/`, assets dans `assets/`.
+- Le champ `type` d'un thème doit valoir `theme`.
 
-## Conventions runtime
-- Plugins actifs : `storage/app/plugins.json`.
-- Thème actif : `storage/app/themes.json`.
-- Données métiers JSON : `storage/data/`.
-- Logs : `storage/logs/`.
+## Conventions marketplace
+- Le catalogue est publié via `public/index.json`.
+- Chaque package thème déclare au minimum :
+  - `name`, `type`, `version`, `checksum`, `size`, `henrion.min`, `henrion.max`
+  - un accès package (`path` ou `download`)
 
-## Conventions de version
-- Version moteur : SemVer (`MAJOR.MINOR.PATCH`).
-- Compatibilité plugin/thème déclarée via bornes Henrion (`henrion.min`, `henrion.max`).
-- La v0.3.0 formalise les contrats sans changement métier.
+## Conventions de compatibilité
+- Compatibilité thèmes via bornes Henrion (`henrion.min`, `henrion.max`).
+- À partir de la logique v0.4 de ce dépôt :
+  - `henrion.min >= 0.3.3`
+  - cible recommandée : `henrion.max = 0.4.*`

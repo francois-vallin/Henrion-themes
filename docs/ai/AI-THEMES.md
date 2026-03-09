@@ -1,9 +1,9 @@
 # AI-THEMES
 
 ## Rôle
-Les thèmes pilotent le rendu visuel sans porter de logique métier.
+Les thèmes pilotent la couche visuelle sans porter de logique métier.
 
-## Structure officielle (v0.3.0)
+## Structure officielle (v0.4)
 ```text
 theme-name/
   theme.json
@@ -18,19 +18,22 @@ Exemple :
 {
   "name": "henrion-theme-classic",
   "title": "Henrion Classic",
-  "version": "0.3.0",
-  "author": "François Vallin",
+  "description": "Thème classique sobre pour les interfaces Henrion.",
+  "version": "0.4.0",
+  "author": "Henrion",
   "type": "theme",
+  "extends": null,
   "henrion": {
-    "min": "0.3.0",
-    "max": "0.3.x"
+    "min": "0.3.3",
+    "max": "0.4.*"
   }
 }
 ```
 
-## Activation
-- Le thème actif est stocké dans `storage/app/themes.json`.
-- La résolution de template passe par `ThemeManager` + `ViewRenderer`.
+## Héritage
+- `extends` peut cibler un thème parent unique.
+- L'enfant surcharge les templates/assets du parent quand un même chemin existe.
+- Les boucles d'héritage sont invalides.
 
-## Préparation v0.4.0
-Même stratégie que pour les plugins : conservation dans le dépôt moteur en v0.3.0, externalisation vers `henrion-theme-*` en v0.4.0.
+## Neutralité technique
+Le dépôt décrit des packages de thèmes et leur contrat marketplace, sans dépendre d'un moteur de template particulier.
