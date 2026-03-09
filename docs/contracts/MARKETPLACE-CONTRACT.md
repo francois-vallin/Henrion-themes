@@ -20,7 +20,7 @@ Champs requis :
 - `version` (semver)
 - `checksum` (`sha256:<64_hex>`)
 - `size` (integer, octets)
-- `henrion.min` (string, `>= 0.3.5.2` pour ce dépôt)
+- `henrion.min` (string)
 - `henrion.max` (string)
 - `path` (chemin relatif à la racine HTTP du catalogue)
 
@@ -28,4 +28,3 @@ Champs requis :
 - Le catalogue décrit uniquement des **packages**.
 - Le runtime ne doit pas dépendre du catalogue pour exécuter un thème.
 - La source de vérité runtime reste le `theme.json` local de chaque thème installé.
-- Le consommateur doit vérifier récupération JSON, validité JSON et compatibilité de package.

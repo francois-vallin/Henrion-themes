@@ -1,11 +1,11 @@
 # AI-MARKETPLACE
 
 ## Rôle
-La marketplace publie un **catalogue de packages** de thèmes et permet l'installation one-click. Elle ne décrit pas le fonctionnement runtime interne des thèmes.
+La marketplace publie un **catalogue de packages** de thèmes. Elle ne décrit pas le fonctionnement interne runtime des thèmes.
 
 ## Endpoint de référence
 - Catalogue JSON : `public/index.json`
-- Exposition HTTP attendue : `http://localhost:8083/index.json`
+- Exemple d'exposition HTTP : `http://localhost:8083/index.json`
 
 ## Format officiel du catalogue
 ```json
@@ -22,7 +22,7 @@ La marketplace publie un **catalogue de packages** de thèmes et permet l'instal
       "checksum": "sha256:...",
       "size": 791,
       "henrion": {
-        "min": "0.3.5.2",
+        "min": "0.3.3",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-classic"
@@ -39,5 +39,5 @@ La marketplace publie un **catalogue de packages** de thèmes et permet l'instal
 - `path` relatif à la racine HTTP de la marketplace.
 
 ## Séparation des responsabilités
-- **Marketplace** : publication, indexation, installation des packages.
-- **Core Henrion** : validation de `theme.json`, compatibilité, dépendances, héritage, Twig.
+- **Marketplace** : publication, indexation et distribution des packages.
+- **Core Henrion** : lecture/validation du `theme.json`, héritage, Twig, templates et assets.

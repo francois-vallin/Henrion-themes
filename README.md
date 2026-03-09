@@ -13,15 +13,6 @@ Le système de thèmes est unifié autour de trois briques :
 La marketplace n'est pas la source de vérité runtime.
 Le core Henrion doit lire et valider le `theme.json` de chaque thème installé.
 
-## Baseline v0.3.5.2
-- Twig est l'unique moteur de rendu.
-- Deux rôles de thème sont requis : `public` et `admin`.
-- Les thèmes peuvent déclarer un parent (`parent`) et des dépendances (`requires`).
-
-## Thèmes minimaux de référence
-- `henrion-theme-classic` : rôle `public`.
-- `henrion-theme-dashboard` : rôle `admin`.
-
 ## Structure d'un package thème
 ```text
 packages/henrion-theme-*/
