@@ -11,7 +11,7 @@
       "checksum": "sha256:2e18f5b68bcff80c065dce17056cd0d2e27db5614ff4b1ff9be1e7642051e1f6",
       "size": 3116,
       "henrion": {
-        "min": "0.3.5.1",
+        "min": "0.3.5.2",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-classic"
@@ -23,7 +23,7 @@
       "checksum": "sha256:1f588b77ea17a0131e87e18296767d7ec21fbb6e4ce865fb3de94468511681ca",
       "size": 2770,
       "henrion": {
-        "min": "0.3.5.1",
+        "min": "0.3.5.2",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-dashboard"
@@ -35,7 +35,7 @@
       "checksum": "sha256:ad1005a198af6d9d9edca7f3ee1fe1c8a36c912d84c1c090e9e5ba7fe198f1a5",
       "size": 2579,
       "henrion": {
-        "min": "0.3.5.1",
+        "min": "0.3.5.2",
         "max": "0.4.*"
       },
       "path": "packages/henrion-theme-classic-child"
